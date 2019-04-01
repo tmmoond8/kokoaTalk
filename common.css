@@ -1,0 +1,93 @@
+.kokoatalk {
+}
+header {
+  display: flex;
+  height: 64px;
+  line-height: 64px;
+}
+header > * {
+  display: inline-block;
+}
+header .header--tabname {
+  font-size: 1.6rem;
+  padding-left:20px;
+}
+
+.header--menus li {
+  display: inline-block;
+}
+
+.header--menus {
+  flex: 1;
+  text-align: right;
+}
+.header--menus li {
+  position: relative;
+  width: 42px;
+  font-size: 0;
+}
+
+.header--menus li::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 17px;
+  left: 0;
+  background-repeat: no-repeat;
+}
+
+.header--search::before {
+  background-image: url(./images/search-solid.svg);
+}
+
+.header--menus .header--friend--add::before {
+  background-image: url(./images/user-plus-solid.svg);
+  width: 32px;
+}
+.header--setting::before {
+  background-image: url(./images/cog-solid.svg);
+}
+
+
+.tab {
+  position: absolute;
+  width:100%;
+  height: 64px;
+  background-color: RGBA(245, 245, 245, 1);
+  bottom: 0;
+  font-size: 0;
+}
+.tab > input {
+  width: 25%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-align: center;
+}
+.tab > input::before {
+  content: "";
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 37%;
+  top: 17px;
+  background-repeat: no-repeat;
+}
+.tab--friend::before {
+  background-image: url(./images/user-regular.svg);
+}
+.tab--talk::before {
+  background-image: url(./images/comment-regular.svg);
+}
+.tab--star::before {
+  background-image: url(./images/star-regular.svg);
+}
+.tab--setting::before {
+  background-image: url(./images/user-regular.svg);
+}
