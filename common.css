@@ -2,92 +2,125 @@
 }
 header {
   display: flex;
-  height: 64px;
-  line-height: 64px;
+  position: fixed;
+  height: 4rem;
+  width: 100vw;
+  background: white;
+  line-height: 4rem;
 }
 header > * {
   display: inline-block;
 }
 header .header--tabname {
   font-size: 1.6rem;
-  padding-left:20px;
+  padding-left: 1.3rem;
 }
 
-.header--menus li {
+.header--search,
+.header--user--plus,
+.header--setting {
   display: inline-block;
+  width: 2.4rem;
+  font-size: 0;
+}
+
+.header--menus i {
+  font-size: 1.6rem;
 }
 
 .header--menus {
   flex: 1;
   text-align: right;
 }
-.header--menus li {
-  position: relative;
-  width: 42px;
-  font-size: 0;
-}
-
-.header--menus li::before {
-  content: "";
-  position: absolute;
-  height: 20px;
-  width: 20px;
-  top: 17px;
-  left: 0;
-  background-repeat: no-repeat;
-}
-
-.header--search::before {
-  background-image: url(./images/search-solid.svg);
-}
-
-.header--menus .header--friend--add::before {
-  background-image: url(./images/user-plus-solid.svg);
-  width: 32px;
-}
-.header--setting::before {
-  background-image: url(./images/cog-solid.svg);
-}
-
 
 .tab {
   position: absolute;
   width:100%;
-  height: 64px;
+  height: 4rem;
+  line-height: 2.5;
   background-color: RGBA(245, 245, 245, 1);
   bottom: 0;
   font-size: 0;
 }
-.tab > input {
-  width: 25%;
+
+.tab > label {
+  display: inline-block;
   position: relative;
-  margin: 0;
-  padding: 0;
-  border: 0;
+  width: 25%;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.tab input {
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
+
 .tab > input::before {
   content: "";
   position: absolute;
-  height: 26px;
-  width: 26px;
+  height: 1.6rem;
+  width: 1.6rem;
   left: 37%;
-  top: 17px;
+  top: 1rem;
   background-repeat: no-repeat;
 }
-.tab--friend::before {
-  background-image: url(./images/user-regular.svg);
+
+.me {
+  display: flex;
 }
-.tab--talk::before {
-  background-image: url(./images/comment-regular.svg);
+
+.me--photo {
+  height: 3rem;
+  width: 3rem;
 }
-.tab--star::before {
-  background-image: url(./images/star-regular.svg);
+
+.me--name {
+  font-size: 1.4rem;
 }
-.tab--setting::before {
-  background-image: url(./images/user-regular.svg);
+
+.me--talk-status {
+
+}
+
+.user--photo {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.user {
+  display: flex;
+}
+.user--data {
+  flex: 1;
+}
+.user--talk-status {
+  font-size: .8rem;
+}
+
+.friend--list {
+  height: 100%;
+  overflow: scroll;
+  padding: 0 1rem;
+}
+.friend--list > li {
+  padding: 1rem 0;
+}
+.friend--list > li + li {
+  border-top: 1px solid RGBA(245, 245, 245, 1);
+}
+
+.group--list > li {
+  padding: 0.6rem 0;
+}
+
+content {
+  display: inline-block;
+  height: calc(100vh - 8rem);
+  width: 100%;
+  margin-top: 4rem;
 }
