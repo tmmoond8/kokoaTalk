@@ -17,20 +17,25 @@ header .header--tabname {
 }
 
 .header--search,
-.header--user--plus,
+.header--friend--plus,
 .header--setting {
   display: inline-block;
-  width: 2.4rem;
+  width: 3rem;
   font-size: 0;
 }
 
 .header--menus i {
-  font-size: 1.6rem;
+  position: relative;
+  top: .6rem;
+  left: -.8rem;
+  font-size: 1.3rem;
 }
 
 .header--menus {
   flex: 1;
   text-align: right;
+  font-size:0;
+  padding-right: 1rem;
 }
 
 .tab {
@@ -38,7 +43,7 @@ header .header--tabname {
   width:100%;
   height: 4rem;
   line-height: 2.5;
-  background-color: RGBA(245, 245, 245, 1);
+  background-color: RGBA(250, 250, 250, 1);
   bottom: 0;
   font-size: 0;
 }
@@ -74,22 +79,58 @@ header .header--tabname {
   display: flex;
 }
 
+
+.me i {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.4rem;
+  color: rgba(174, 226, 219, 1.00);
+}
+
+.me i::before {
+  position: absolute;
+  top: 1rem;
+  left: 1.2rem;
+  z-index: 15;
+}
+.me i::after {
+  content: "";
+  position: absolute;
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: rgba(120, 196, 187, 1.00);
+  border-radius: 1.4rem;
+}
+
+.me--data {
+  margin: auto 0;
+  padding-left: 0.4rem;
+}
+
 .me--photo {
   height: 3rem;
   width: 3rem;
 }
 
 .me--name {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .me--talk-status {
-
+  color: RGBA(180, 180, 180, 1);
+  font-size: 0.7rem;
+  padding-top: .3rem;
 }
 
 .user--photo {
   height: 2.4rem;
   width: 2.4rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  border-radius: .9rem;
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.1);
 }
 
 .user {
@@ -97,9 +138,13 @@ header .header--tabname {
 }
 .user--data {
   flex: 1;
+  padding-left: 1rem;
+  margin: auto 0;
 }
 .user--talk-status {
-  font-size: .8rem;
+  font-size: .6rem;
+  color: RGBA(180, 180, 180, 1);
+  padding-top: .3rem;
 }
 
 .friend--list {
@@ -111,7 +156,13 @@ header .header--tabname {
   padding: 1rem 0;
 }
 .friend--list > li + li {
-  border-top: 1px solid RGBA(245, 245, 245, 1);
+  border-top: 1px solid RGBA(235, 235, 235, 1);
+}
+
+.group--name {
+  font-size: .8rem;
+  color: RGBA(140, 140, 140, 1);
+  padding-bottom: .3rem;
 }
 
 .group--list > li {
