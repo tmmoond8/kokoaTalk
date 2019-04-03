@@ -20,6 +20,7 @@ header .header--tabname {
 
 .header--search,
 .header--friend--plus,
+.header--talk-plus,
 .header--setting {
   display: inline-block;
   width: 3rem;
@@ -31,6 +32,16 @@ header .header--tabname {
   top: .6rem;
   left: -.8rem;
   font-size: 1.3rem;
+}
+
+.header--talk-plus--icon::after {
+  content: "+";
+  position: absolute;
+  top: 0.3rem;
+  left: 1rem;
+  line-height: .6rem;
+  font-size: 1rem;
+  background: white;
 }
 
 .header--menus {
@@ -66,16 +77,6 @@ header .header--tabname {
   margin: 0;
   padding: 0;
   border: 0;
-}
-
-.tab > input::before {
-  content: "";
-  position: absolute;
-  height: 1.6rem;
-  width: 1.6rem;
-  left: 37%;
-  top: 1rem;
-  background-repeat: no-repeat;
 }
 
 content {
