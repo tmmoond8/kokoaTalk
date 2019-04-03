@@ -1,4 +1,6 @@
-.kokoatalk {
+.app {
+  position: relative;
+  height: 100vh;
 }
 header {
   display: flex;
@@ -42,7 +44,6 @@ header .header--tabname {
   position: absolute;
   width:100%;
   height: 4rem;
-  line-height: 2.5;
   background-color: RGBA(250, 250, 250, 1);
   bottom: 0;
   font-size: 0;
@@ -52,6 +53,8 @@ header .header--tabname {
   display: inline-block;
   position: relative;
   width: 25%;
+  height: 4rem;
+  line-height: 4rem;
   text-align: center;
   font-size: 1.6rem;
 }
@@ -140,6 +143,7 @@ header .header--tabname {
   flex: 1;
   padding-left: 1rem;
   margin: auto 0;
+  font-size: 1rem;
 }
 .user--talk-status {
   font-size: .6rem;
@@ -174,4 +178,20 @@ content {
   height: calc(100vh - 8rem);
   width: 100%;
   margin-top: 4rem;
+}
+
+
+.page-friend,
+.page-talk,
+.page-star,
+.page-setting {
+  position: absolute;
+  width: 100%;
+}
+
+.tab--friend:checked ~ .page-friend,
+.tab--talk:checked ~ .page-talk,
+.tab--star:checked ~ .page-star,
+.tab--setting:checked ~ .page-setting {
+  transform : translateY(-100vh);
 }
