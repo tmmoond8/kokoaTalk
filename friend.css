@@ -45,6 +45,11 @@
   padding-top: .3rem;
 }
 
+.user {
+  display: flex;
+  padding: 0.6rem 0;
+}
+
 .user--photo {
   height: 2.4rem;
   width: 2.4rem;
@@ -53,10 +58,6 @@
   background-position-x: center;
   border-radius: .9rem;
   box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.1);
-}
-
-.user {
-  display: flex;
 }
 
 .user--data {
@@ -87,8 +88,4 @@
   font-size: .8rem;
   color: RGBA(140, 140, 140, 1);
   padding-bottom: .3rem;
-}
-
-.group--list > li {
-  padding: 0.6rem 0;
 }
