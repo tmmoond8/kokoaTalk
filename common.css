@@ -1,12 +1,19 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .app {
   position: relative;
   height: 100vh;
+  width: 100%;
 }
 header {
   display: flex;
   position: fixed;
   height: 4rem;
-  width: 100vw;
+  width: 100%;
   background: white;
   line-height: 4rem;
 }
@@ -93,6 +100,7 @@ content {
 .page-setting {
   position: absolute;
   width: 100%;
+  transform : translateY(200vh);
 }
 
 .tab--friend:checked ~ .page-friend,
@@ -100,4 +108,34 @@ content {
 .tab--star:checked ~ .page-star,
 .tab--setting:checked ~ .page-setting {
   transform : translateY(-100vh);
+}
+
+@media (min-width: 480px) {
+  .app {
+    width: 299px;
+    height: 626px;
+    margin: 0 auto;
+  }
+  .app:before {
+    content: "";
+    position: absolute;
+    width: 423px;
+    height: 718px;
+    top: -4rem;
+    left: -2.1rem;
+    background-image: url(./images/iphone-front.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .tab--friend:checked ~ .page-friend,
+  .tab--talk:checked ~ .page-talk,
+  .tab--star:checked ~ .page-star,
+  .tab--setting:checked ~ .page-setting {
+    transform : translateY(-626px);
+  }
+
+  content {
+    height: calc(626px - 8rem);
+  }
 }
