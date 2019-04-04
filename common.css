@@ -6,23 +6,24 @@ body {
 
 .app {
   position: relative;
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 header {
   display: flex;
-  position: fixed;
-  height: 4rem;
+  /* position: fixed; */
+  height: 3rem;
   width: 100%;
   background: white;
-  line-height: 4rem;
+  line-height: 3rem;
+  -webkit-transform: translateZ(0);
 }
 header > * {
   display: inline-block;
 }
 header .header--tabname {
-  font-size: 1.6rem;
-  padding-left: 1.3rem;
+  font-size: 1.2rem;
+  padding-left: 1rem;
 }
 
 .header--search,
@@ -30,24 +31,24 @@ header .header--tabname {
 .header--talk-plus,
 .header--setting {
   display: inline-block;
-  width: 3rem;
+  width: 2.2rem;
   font-size: 0;
 }
 
 .header--menus i {
   position: relative;
-  top: .6rem;
-  left: -.8rem;
-  font-size: 1.3rem;
+  top: .3rem;
+  left: -.2rem;
+  font-size: 1.0rem;
 }
 
 .header--talk-plus--icon::after {
   content: "+";
   position: absolute;
-  top: 0.3rem;
-  left: 1rem;
-  line-height: .6rem;
-  font-size: 1rem;
+  top: 0.08rem;
+  left: 0.75rem;
+  line-height: .14rem;
+  font-size: 0.75rem;
   background: white;
 }
 
@@ -59,22 +60,23 @@ header .header--tabname {
 }
 
 .tab {
-  position: absolute;
+  /* position: fixed; */
   width:100%;
-  height: 4rem;
+  height: 3rem;
   background-color: RGBA(250, 250, 250, 1);
   bottom: 0;
   font-size: 0;
+  -webkit-transform: translateZ(0);
 }
 
 .tab > label {
   display: inline-block;
   position: relative;
   width: 25%;
-  height: 4rem;
-  line-height: 4rem;
+  height: 3rem;
+  line-height: 3rem;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 .tab input {
   box-sizing: border-box;
@@ -88,9 +90,9 @@ header .header--tabname {
 
 content {
   display: inline-block;
-  height: calc(100vh - 8rem);
+  height: calc(100vh - 6rem);
   width: 100%;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 
@@ -114,22 +116,20 @@ content {
   position: absolute;
   width: 47px;
   height: 30px;
+  visibility: hidden;
   background-image: url(./images/iphone-edge-left.png);
   background-repeat: no-repeat;
   background-size: contain;
-  bottom: -12000px;
-  left: -21px;
   transform: rotate(45deg);
 }
 .iphone--edge--right {
   position: absolute;
   width: 47px;
   height: 30px;
+  visibility: hidden;
   background-image: url(./images/iphone-edge-right.png);
   background-repeat: no-repeat;
   background-size: contain;
-  bottom: -9000px;
-  right: -21px;
   transform: rotate(-45deg);
 }
 
@@ -139,6 +139,13 @@ content {
     height: 626px;
     margin: 0 auto;
   }
+  
+  .tab {
+    width: 299px;
+    top: calc(50vh + 265px);
+    bottom: unset;
+  }
+
   .app:before {
     content: "";
     position: absolute;
@@ -153,10 +160,12 @@ content {
 
 
   .iphone--edge--left {
+    visibility: visible;
     bottom: -12px;
     left: -21px;
   }
   .iphone--edge--right {
+    visibility: visible;
     bottom: -9px;
     right: -21px;
   }
@@ -169,6 +178,6 @@ content {
   }
 
   content {
-    height: calc(626px - 8rem);
+    height: calc(626px - 6rem);
   }
 }
