@@ -117,7 +117,7 @@ content {
   background-image: url(./images/iphone-edge-left.png);
   background-repeat: no-repeat;
   background-size: contain;
-  bottom: -12px;
+  bottom: -12000px;
   left: -21px;
   transform: rotate(45deg);
 }
@@ -128,7 +128,7 @@ content {
   background-image: url(./images/iphone-edge-right.png);
   background-repeat: no-repeat;
   background-size: contain;
-  bottom: -9px;
+  bottom: -9000px;
   right: -21px;
   transform: rotate(-45deg);
 }
@@ -149,6 +149,16 @@ content {
     background-image: url(./images/iphone-front.png);
     background-repeat: no-repeat;
     background-size: contain;
+  }
+
+
+  .iphone--edge--left {
+    bottom: -12px;
+    left: -21px;
+  }
+  .iphone--edge--right {
+    bottom: -9px;
+    right: -21px;
   }
 
   .tab--friend:checked ~ .page-friend,
