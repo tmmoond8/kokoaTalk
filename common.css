@@ -79,10 +79,8 @@ header .header--tabname {
   font-size: 1.2rem;
 }
 .tab input {
+  display:none;
   box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   margin: 0;
   padding: 0;
   border: 0;
@@ -102,6 +100,7 @@ content {
 .page-setting {
   position: absolute;
   width: 100%;
+  visibility: hidden;
   transform : translateY(200vh);
 }
 
@@ -110,6 +109,7 @@ content {
 .tab--star:checked ~ .page-star,
 .tab--setting:checked ~ .page-setting {
   transform : translateY(-100vh);
+  visibility: visible;
 }
 
 .iphone--edge--left {

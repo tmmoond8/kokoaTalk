@@ -500,4 +500,15 @@
       <div class="iphone--edge--right"></div>
     </div>
   </body>
+  <script>
+    const userAgent = window.navigator.userAgent;
+    if(userAgent.match(/(iphone|ipad)+/gi) && userAgent.match(/(iphone|ipad)+/gi).length > 0) {
+      const contentHeight = (window.innerHeight - 16*6) + 'px';
+      const contents = document.querySelectorAll('content');
+      contents.forEach(content => {
+        content.style.height = contentHeight
+        content.parentElement.style.transform = `translateY(-${window.innerHeight}px)`;
+      });
+    }
+  </script>
 </html>
