@@ -3,26 +3,24 @@
   overflow: scroll;
   padding: 0 1rem;
 }
+
 .talk--list > li {
   padding: 1rem 0;
 }
-.talk--list > li + li {
-  border-top: 1px solid RGBA(235, 235, 235, 1);
-}
 
-.company {
+.talk {
   display: flex;
   padding: 1rem 0;
 }
 
 
-.company--data {
+.talk--data {
   flex: 1;
   margin: auto 0;
   padding-left: 1rem;
 }
 
-.company--photo {
+.talk--photo {
   height: 3rem;
   width: 3rem;
   background-repeat: no-repeat;
@@ -32,17 +30,20 @@
   box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.1);
 }
 
-.company--name {
-  font-size: 1.2rem;
+.talk--name {
+  font-size: .8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.company--term {
-  padding-left: 2rem;
+.talk--term {
+  float: right;
   font-size: 0.8rem;
   color: RGBA(100, 100, 100, 1);
 }
 
-.company--talk-status {
+.talk--talk-status {
   color: RGBA(180, 180, 180, 1);
   font-size: 0.7rem;
   line-height: .9rem;
@@ -50,19 +51,19 @@
 }
 
 
-.product {
+.open-talk {
   display: flex;
   padding: 1rem 0;
 }
 
 
-.product--data {
+.open-talk--data {
   flex: 1;
   margin: auto 0;
   padding-left: 1rem;
 }
 
-.product--photo {
+.open-talk--photo {
   height: 3rem;
   width: 3rem;
   background-repeat: no-repeat;
@@ -72,23 +73,51 @@
   box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.1);
 }
 
-.product--name {
-  font-size: 1.2rem;
+.open-talk--name {
+  font-size: .8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.product--term {
-  padding-left: 2rem;
+.open-talk--term {
+  float: right;
   font-size: 0.8rem;
   color: RGBA(100, 100, 100, 1);
 }
 
-.product--talk-status {
+.open-talk--talk-status {
   color: RGBA(180, 180, 180, 1);
   font-size: 0.7rem;
   line-height: .9rem;
   padding-top: .3rem;
 }
 
+
+.open-talk--4photo {
+  height: 3rem;
+  width: 3rem;
+}
+
+
+.open-talk--4photo--piece {
+  display: inline-block;
+  height: 1.3rem;
+  width: 1.3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  border-radius: .5rem;
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.1);
+}
+
+.open-talk--4photo--piece:nth-child(even) {
+  margin-left: 0.2rem;
+}
+.open-talk--4photo--piece:nth-child(1),
+.open-talk--4photo--piece:nth-child(2) {
+  margin-bottom: 0.2rem;
+}
 
 .skill-stack {
   position: relative;
@@ -123,29 +152,4 @@
   line-height: 1rem;
   background-color: RGBA(255, 235,235, 1);
   border-radius: 1rem;
-}
-
-.product--4photo {
-  height: 3rem;
-  width: 3rem;
-}
-
-
-.product--4photo--piece {
-  display: inline-block;
-  height: 1.3rem;
-  width: 1.3rem;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: center;
-  border-radius: .5rem;
-  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.1);
-}
-
-.product--4photo--piece:nth-child(even) {
-  margin-left: 0.2rem;
-}
-.product--4photo--piece:nth-child(1),
-.product--4photo--piece:nth-child(2) {
-  margin-bottom: 0.2rem;
 }
