@@ -117,7 +117,7 @@ content {
   width: 47px;
   height: 30px;
   visibility: hidden;
-  background-image: url(../images/iphone-edge-left.png);
+  background-image: url(./src/images/iphone-edge-left.png);
   background-repeat: no-repeat;
   background-size: contain;
   transform: rotate(45deg);
@@ -127,7 +127,7 @@ content {
   width: 47px;
   height: 30px;
   visibility: hidden;
-  background-image: url(../images/iphone-edge-right.png);
+  background-image: url(./src/images/iphone-edge-right.png);
   background-repeat: no-repeat;
   background-size: contain;
   transform: rotate(-45deg);
@@ -153,7 +153,7 @@ content {
     height: 718px;
     top: -4rem;
     left: -2.1rem;
-    background-image: url(../images/iphone-front.png);
+    background-image: url(./src/images/iphone-front.png);
     background-repeat: no-repeat;
     background-size: contain;
   }
