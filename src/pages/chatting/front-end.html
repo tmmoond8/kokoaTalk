@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KokoaTalk - tamm</title>
+    <link rel="shortcut icon"
+      href="https://user-images.githubusercontent.com/11402468/55523896-ffb35680-56c5-11e9-9e6c-6a8843cc98e9.png"
+      />
+    <meta name="viewport" content="480, initial-scale=1.0">
+
+    <!-- common social tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+      content="https://user-images.githubusercontent.com/11402468/55523896-ffb35680-56c5-11e9-9e6c-6a8843cc98e9.png">
+    <meta property="og:site_name" content="Kokoa Talk - tamm">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image"
+      content="https://user-images.githubusercontent.com/11402468/55523896-ffb35680-56c5-11e9-9e6c-6a8843cc98e9.png">
+    <meta name="twitter:site" content="@KokoaTalk">
+    <meta name="twitter:creator" content="@tamm">
+
+    <!-- document-specific social tags -->
+    <meta property="og:title" content="카카오톡 UI 카피">
+    <meta property="og:url" content="https://tmmoond8.github.io/kokoaTalk/">
+    <meta name="twitter:url" content="https://tmmoond8.github.io/kokoaTalk/">
+    <meta name="twitter:title" content="카카오톡 UI 카피">
+
+    <meta property="og:description" content="노마드 코더의 니콜라스의 강의 중 카카오톡을 카피하여 html,
+      css로 구성하는 것이 있어서 따라해보았습니다. 제 나름의 구조로 짜서 조금 엉망일 수 있습니다.">
+    <meta name="description" content="노마드 코더의 니콜라스의 강의 중 카카오톡을 카피하여 html, css로
+      구성하는 것이 있어서 따라해보았습니다. 제 나름의 구조로 짜서 조금 엉망일 수 있습니다.">
+    <meta name="twitter:description" content="노마드 코더의 니콜라스의 강의 중 카카오톡을 카피하여
+      html, css로 구성하는 것이 있어서 따라해보았습니다. 제 나름의 구조로 짜서 조금 엉망일 수 있습니다.">
+    <!-- css import -->
+    <link rel="stylesheet" href="../../../reset.css">
+    <link rel="stylesheet" href="../../../common.css">
+    <link rel="stylesheet" href="./chatting.css">
+    <link rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="app">
+      <div class="page--chatting">
+        <header class="chatting-header"">
+          <a class="header--back" href="/">➔</a>
+          <h2 class="header--tabname">프론트개발자(front-developer)</h2>
+          <nav class="header--menus">
+            <ol>
+              <li class="header--search">검색
+                <i class="fas fa-search"></i>
+              </li>
+              <li class="header--setting">메뉴
+                <i class="fas fa-bars"></i>
+              </li>
+            </ol>
+          </nav>
+        </header>
+        <content>
+          <ol class="messages">
+            <li class="message--ballon">
+              <div class="profile"
+                style="background-image:url(../../images/logos/profile1.jpg);">
+              </div>
+              <div class="contents-area">
+                <p class="name">문성주</p>
+                <p class="contents">칼퇴 메타</p>
+              </div>
+            </li>
+            <li class="message">
+              <div class="profile--none"></div>
+              <div class="contents-area">
+                <p class="name"></p>
+                <p class="contents">막창 3인 분!!
+                  <span class="read-count"></span>
+                  <span class="time">오후 4:11</span>
+                </p>
+              </div>
+            </li>
+            <li class="message--ballon">
+              <div class="profile"
+                style="background-image:url(../../images/logos/profile2.jpg);">
+              </div>
+              <div class="contents-area">
+                <p class="name">어리양</p>
+                <p class="contents">축 해방 ~~
+                  <span class="read-count"></span>
+                  <span class="time">오후 5:46</span>
+                </p>
+              </div>
+            </li>
+            <li class="my-message--ballon">
+              <p class="my-message--contents">곱창 막창 대창!!
+                <span class="my-message--read-count">1</span>
+                <span class="my-message--time">오후 5:55</span>
+              </p>
+            </li>
+            <li class="message--ballon">
+              <div class="profile"
+                style="background-image:url(../../images/logos/profile3.png);"></div>
+              <div class="contents-area">
+                <p class="name">서재원</p>
+                <p class="contents">mathias 님의 globalThis 폴리필입니다.
+                  <span class="read-count">1</span>
+                </p>
+              </div>
+            </li>
+            <li class="message">
+              <div class="profile--none"></div>
+              <div class="contents-area">
+                <p class="name"></p>
+                <p class="contents">magic을 사용해서 그런지 정말 간단하네요.<br>명료한지는 잘 모르겠지만..ㅎ
+                  <span class="read-count">1</span>
+                  <span class="time">오후 6:09</span>
+                </p>
+              </div>
+            </li>
+            <li class="message--ballon">
+              <div class="profile"
+                style="background-image:url(../../images/logos/profile4.jpeg);"></div>
+              <div class="contents-area">
+                <p class="name">jrjung</p>
+                <p class="contents">div.classList.add() 요
+                  <span class="read-count">2</span>
+                </p>
+              </div>
+            </li>
+            <li class="message">
+              <div class="profile--none"></div>
+              <div class="contents-area">
+                <p class="name"></p>
+                <p class="contents">아마(..)
+                  <span class="read-count">2</span>
+                  <span class="time">오후 7:43</span>
+                </p>
+              </div>
+            </li>
+          </ol>
+        </content>
+        <footer class="input-bar">
+          <form class="input-bar--form">
+            <button class="input-bar--insert-everything">
+              <i class="far fa-plus-square"></i>
+            </button>
+            <input class="input-bar--text" type="text">
+            <button class="input-bar--emoticon">
+              <i class="far fa-smile"></i>
+            </button>
+            <button type="submit" class="input-bar--send">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </footer>
+      </div>
+      <div class="iphone--edge--left"></div>
+      <div class="iphone--edge--right"></div>
+    </div>
+  </body>
+</html>

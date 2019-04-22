@@ -4,13 +4,10 @@
   padding: 0 1rem;
 }
 
-.talk--list > li {
-  padding: 1rem 0;
-}
-
 .talk {
   display: flex;
   padding: 1rem 0;
+  text-decoration: none;
 }
 
 
@@ -32,6 +29,7 @@
 
 .talk--name {
   font-size: .8rem;
+  color: black;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -54,6 +52,7 @@
 .open-talk {
   display: flex;
   padding: 1rem 0;
+  text-decoration: none;
 }
 
 
@@ -75,6 +74,7 @@
 
 .open-talk--name {
   font-size: .8rem;
+  color: black;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

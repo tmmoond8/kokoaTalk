@@ -9,7 +9,6 @@ body {
 }
 header {
   display: flex;
-  /* position: fixed; */
   height: 3rem;
   width: 100%;
   background: white;
@@ -19,9 +18,13 @@ header {
 header > * {
   display: inline-block;
 }
-header .header--tabname {
+.header--tabname {
+  flex: 1;
   font-size: 1.2rem;
   padding-left: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .header--search,
@@ -52,7 +55,6 @@ header .header--tabname {
 }
 
 .header--menus {
-  flex: 1;
   text-align: right;
   font-size:0;
   padding-right: 1rem;
@@ -76,7 +78,21 @@ header .header--tabname {
   line-height: 3rem;
   text-align: center;
   font-size: 1.2rem;
+  cursor: pointer;
 }
+
+.tab > label:hover {
+  background-color: rgba(220, 220, 220, 1);
+}
+
+.tab > label:active {
+  background-color: rgba(230, 230, 230, 1);
+}
+
+input[type="radio"]:checked + label {
+  background-color: rgba(230, 230, 230, 1);
+}
+
 .tab input {
   display:none;
   box-sizing: border-box;

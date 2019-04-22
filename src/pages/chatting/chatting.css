@@ -30,6 +30,7 @@ content {
   padding: 0.4rem;
   height: 100%;
   overflow: auto;
+  font-size: 0;
 }
 
 .message {
@@ -128,7 +129,7 @@ content {
 .time {
   display: inline-block;
   position: absolute;
-  right: -2.5rem;
+  right: -2.8rem;
   bottom: 0;
   font-size: 0.5rem;
 }
@@ -136,7 +137,7 @@ content {
 .read-count {
   display: inline-block;
   position: absolute;
-  right: -0.7rem;
+  right: -1rem;
   bottom: 1rem;
   color: rgba(255, 240, 59, 1);
   font-size: 0.5rem;
@@ -158,6 +159,7 @@ content {
   border-radius: 0.2rem;
   word-break: break-all;
   line-height: 1.3;
+  text-align: left;
 }
 
 .my-message--ballon .my-message--contents::before {
@@ -249,4 +251,107 @@ content {
   font-size: 1.5rem;
   background-color: rgba(254, 229, 0, 1);
   text-align: center;
+}
+
+
+.open-talk {
+  display: flex;
+  padding: 1rem 0;
+}
+
+
+.open-talk--data {
+  flex: 1;
+  margin: auto 0;
+  padding-left: 1rem;
+}
+
+.open-talk--photo {
+  height: 3rem;
+  width: 3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  border-radius: 1.3rem;
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.1);
+}
+
+.open-talk--name {
+  font-size: .8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.open-talk--term {
+  float: right;
+  font-size: 0.8rem;
+  color: RGBA(100, 100, 100, 1);
+}
+
+.open-talk--talk-status {
+  color: RGBA(180, 180, 180, 1);
+  font-size: 0.7rem;
+  line-height: .9rem;
+  padding-top: .3rem;
+}
+
+
+.open-talk--4photo {
+  height: 3rem;
+  width: 3rem;
+}
+
+
+.open-talk--4photo--piece {
+  display: inline-block;
+  height: 1.3rem;
+  width: 1.3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  border-radius: .5rem;
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.1);
+}
+
+.open-talk--4photo--piece:nth-child(even) {
+  margin-left: 0.2rem;
+}
+.open-talk--4photo--piece:nth-child(1),
+.open-talk--4photo--piece:nth-child(2) {
+  margin-bottom: 0.2rem;
+}
+
+.link {
+  position: relative;
+  display: inline-block;
+  font-size: 0.8rem;
+  max-width: calc(100% - 2.5rem);
+  background-color: white;
+  border-radius: 0.2rem;
+  word-break: break-all;
+  line-height: 1.4;
+}
+
+.link--subject {
+  font-size: 1rem;
+}
+
+.link--name {
+  padding-top: .4rem;
+  font-size: .8rem;
+  color: gray;
+}
+
+.link--data {
+  padding: 0.6rem;
+}
+
+.link--image {
+  height: 6rem;
+  font-size: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  border-bottom: 1px solid rgba(229, 229, 229, 1);
 }
