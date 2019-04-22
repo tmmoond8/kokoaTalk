@@ -1,7 +1,5 @@
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .app {
@@ -29,7 +27,8 @@ header .header--tabname {
 .header--search,
 .header--friend--plus,
 .header--talk-plus,
-.header--setting {
+.header--setting,
+.header--menu {
   display: inline-block;
   width: 2.2rem;
   font-size: 0;
@@ -134,6 +133,10 @@ content {
 }
 
 @media (min-width: 480px) {
+  body {
+    justify-content: center;
+    align-items: center;
+  }
   .app {
     width: 299px;
     height: 626px;
@@ -158,16 +161,17 @@ content {
     background-size: contain;
   }
 
-
   .iphone--edge--left {
     visibility: visible;
     bottom: -12px;
     left: -21px;
+    z-index: 15;
   }
   .iphone--edge--right {
     visibility: visible;
     bottom: -9px;
     right: -21px;
+    z-index: 15;
   }
 
   .tab--friend:checked ~ .page-friend,
