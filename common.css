@@ -81,16 +81,24 @@ header > * {
   cursor: pointer;
 }
 
-.tab > label:hover {
-  background-color: rgba(220, 220, 220, 1);
+.tab .selected {
+  display: none;
 }
 
-.tab > label:active {
-  background-color: rgba(230, 230, 230, 1);
+input[type="radio"]:checked  + label > i {
+  display: none;
 }
 
-input[type="radio"]:checked + label {
-  background-color: rgba(230, 230, 230, 1);
+input[type="radio"]:checked  + label > .selected {
+  display: block;
+}
+
+.setting + label > i {
+  color: gray;
+}
+
+.setting + label > .selected {
+  color: black;
 }
 
 .tab input {
@@ -194,7 +202,7 @@ content {
   .tab--talk:checked ~ .page-talk,
   .tab--star:checked ~ .page-star,
   .tab--setting:checked ~ .page-setting {
-    transform : translateY(-626px);
+    transform : translateY(-638px);
   }
 
   content {
