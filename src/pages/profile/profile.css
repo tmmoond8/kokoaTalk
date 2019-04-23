@@ -1,0 +1,138 @@
+.page--profile {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.top {
+  position: relative;
+  height: 60%;
+  background-image: url(../../images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bottom {
+  flex: 1;
+  position: relative;
+  text-align: center;
+}
+
+
+.top--close {
+  position: absolute;
+  top: .5rem;
+  color: white;
+  font-size: 2.4rem;
+  padding: .5rem 1rem;
+  text-decoration: none;
+}
+
+.top--image-history {
+  position: absolute;
+  width: 2.4rem;
+  height: 2.4rem;
+  right: 1rem;
+  top: 1.2rem;
+  background-image: url(../../images/logos/my-profile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+}
+
+.top--present {
+  display: inline-block;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 1rem;
+  color: white;
+  padding: .4rem;
+  border-radius: 1.4rem;
+  border: 1px solid white;
+}
+
+.top--qrcode {
+  display: inline-block;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 1rem;
+  color: white;
+  padding: .4rem;
+  border-radius: 1.4rem;
+  border: 1px solid white;
+}
+
+.top--status-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: white;
+  font-size: 1.4rem;
+  transform: translate(-50%, -50%);
+  -webkit-box-shadow: -2px 2px 26px 0px rgba(0,0,0,0.48);
+  -moz-box-shadow: -2px 2px 26px 0px rgba(0,0,0,0.48);
+  box-shadow: -2px 2px 26px 0px rgba(0,0,0,0.48);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.top--profile-image {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url(../../images/logos/my-profile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2.56rem;
+}
+
+.bottom--name {
+  padding: 2rem 0 .4rem 0;
+  font-weight: 400;
+}
+
+.bottom--email {
+  display: inline-block;
+  font-size: .5rem;
+  color: rgba(200, 200, 200, 1);
+  border: 1px solid rgba(200, 200, 200, .4);
+  padding: .5rem .8rem;
+  border-radius: .9rem;
+}
+
+.bottom--button-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  bottom: 4rem;
+  padding: 0 1.3rem;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button--round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: rgba(247, 247, 247, 1);
+  border-radius: 1.2rem;
+}
+
+.button--label {
+  padding-top: .8rem;
+  font-size: .6rem;
+}

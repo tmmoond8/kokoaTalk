@@ -1,28 +1,15 @@
 .me {
   display: flex;
+  text-decoration: none;
 }
 
-.me i {
-  position: relative;
-  width: 4rem;
-  height: 4rem;
-  font-size: 1.4rem;
-  color: rgba(174, 226, 219, 1.00);
-}
-
-.me i::before {
-  position: absolute;
-  top: 1rem;
-  left: 1.2rem;
-  z-index: 15;
-}
-.me i::after {
-  content: "";
-  position: absolute;
-  width: 3.6rem;
-  height: 3.6rem;
-  background-color: rgba(120, 196, 187, 1.00);
-  border-radius: 1.4rem;
+.me--photo {
+  height: 3.4rem;
+  width: 3.4rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1.2rem;
+  margin-right: .8rem;
 }
 
 .me--data {
@@ -30,13 +17,9 @@
   padding-left: 0.4rem;
 }
 
-.me--photo {
-  height: 3rem;
-  width: 3rem;
-}
-
 .me--name {
   font-size: 1.2rem;
+  color: black;
 }
 
 .me--talk-status {

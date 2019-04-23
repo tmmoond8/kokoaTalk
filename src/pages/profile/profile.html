@@ -35,7 +35,7 @@
     <!-- css import -->
     <link rel="stylesheet" href="../../../reset.css">
     <link rel="stylesheet" href="../../../common.css">
-    <link rel="stylesheet" href="./chatting.css">
+    <link rel="stylesheet" href="./profile.css">
     <link rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
@@ -43,67 +43,43 @@
   </head>
   <body>
     <div class="app">
-      <div class="page--chatting">
-        <header class="chatting-header"">
-          <a href="/" class="header--back">➔</a>
-          <h2 class="header--tabname">{ 출퇴근 개발 읽기 }</h2>
-          <nav class="header--menus">
-            <ol>
-              <li class="header--search">검색
-                <i class="fas fa-search"></i>
-              </li>
-              <li class="header--setting">메뉴
-                <i class="fas fa-bars"></i>
-              </li>
-            </ol>
-          </nav>
-        </header>
-        <content>
-          <ol class="messages">
-            <li class="message--ballon">
-              <div class="profile"
-                style="background-image:url(../../images/logos/profile3.png);"></div>
-              <div class="contents-area">
-                <p class="name">integerous</p>
-                <p class="contents">알리바바, ai로 코드 수정<br>
-                  <a
-                    href="https://m.news.naver.com/read.nhn?mode=LSD&sid1=105&oid=092&aid=0002160319">
-                    https://m.news.naver.com/read.nhn?mode=LSD&sid1=105&oid=092&aid=0002160319
-                  </a>
-                </p>
+      <div class="page--profile">
+        <div class="top">
+          <a href="/" class="top--close">&times;</a>
+          <span class="top--image-history"></span>
+          <p class="top--present">
+            <i class="fas fa-gift"></i>
+          </p>
+          <p class="top--qrcode">
+            <i class="fas fa-qrcode"></i>
+          </p>
+          <p class="top--status-text">백수</p>
+          <div class="top--profile-image"></div>
+        </div>
+        <div class="bottom">
+          <h2 class="bottom--name">tamm</h2>
+          <p class="bottom--email">tmmoond8@gmail.com</p>
+          <ol class="bottom--button-list">
+            <li class="button">
+              <div class="button--round">
+                <i class="fas fa-comment"></i>
               </div>
+              <p class="button--label">나와의 채팅</p>
             </li>
-            <li class="message">
-              <div class="profile--none"></div>
-              <div class="contents-area">
-                <p class="name"></p>
-                <div class="link">
-                  <div class="link--image" style="background-image:
-                    url(../../images/logos/javacafe.png)">link image javacafe</div>
-                  <div class="link--data">
-                    <p class="link--subject"><span>여러 git 리파지토리 한꺼...</span></p>
-                    <p class="link--contents">이 글의 목표는 리눅스 명령어를 ...</p>
-                    <p class="link--name">tech.javacafe.io</p>
-                  </div>
-                </div>
+            <li class="button">
+              <div class="button--round">
+                <i class="fas fa-pen"></i>
               </div>
+              <p class="button--label">프로필 관리</p>
+            </li>
+            <li class="button">
+              <div class="button--round">
+                <i class="fas fa-quote-right"></i>
+              </div>
+              <p class="button--label">코코아스토리</p>
             </li>
           </ol>
-        </content>
-        <footer class="input-bar">
-          <form class="input-bar--form">
-            <button class="input-bar--insert-everything">
-              <i class="far fa-plus-square"></i>
-            </button>
-            <input class="input-bar--text" type="text">
-            <button class="input-bar--emoticon">
-              <i class="far fa-smile"></i>
-            </button>
-            <button type="submit" class="input-bar--send">
-              <i class="fas fa-paper-plane"></i>
-            </button>
-          </form>
-        </footer>
+        </div>
       </div>
       <div class="iphone--edge--left"></div>
       <div class="iphone--edge--right"></div>
