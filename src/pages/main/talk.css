@@ -33,6 +33,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  padding: .1rem 0;
 }
 
 .talk--term {
@@ -78,6 +79,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  padding: .1rem 0;
 }
 
 .open-talk--term {

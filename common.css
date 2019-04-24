@@ -90,7 +90,7 @@ input[type="radio"]:checked  + label > i {
 }
 
 input[type="radio"]:checked  + label > .selected {
-  display: block;
+  display: inline;
 }
 
 .setting + label > i {
@@ -124,6 +124,7 @@ content {
   position: absolute;
   width: 100%;
   visibility: hidden;
+  top: 3rem;
   transform : translateY(200vh);
 }
 
@@ -202,7 +203,7 @@ content {
   .tab--talk:checked ~ .page-talk,
   .tab--star:checked ~ .page-star,
   .tab--setting:checked ~ .page-setting {
-    transform : translateY(-638px);
+    transform : translateY(-626px);
   }
 
   content {
