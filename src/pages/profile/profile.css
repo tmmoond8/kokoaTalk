@@ -1,7 +1,17 @@
+@keyframes fadein {
+  from { 
+    transform: translateY(3vh)
+  }
+  to { 
+    transform: translateY(0)
+  }
+}
+
 .page--profile {
   display: flex;
   flex-direction: column;
   height: 100%;
+  animation: .3s fadein;
 }
 
 .top {

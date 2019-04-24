@@ -1,5 +1,15 @@
+@keyframes fadein {
+  from { 
+    transform: translateY(3vh)
+  }
+  to { 
+    transform: translateY(0)
+  }
+}
+
 content {
   margin-top: -.2rem;
+  animation: .5s fadein;
 }
 
 .page--chatting {
