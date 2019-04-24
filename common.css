@@ -136,6 +136,18 @@ content {
   visibility: visible;
 }
 
+.tab content {
+  transform: translateY(3vh);
+}
+
+.tab--friend:checked ~ .page-friend > .friend-area,
+.tab--talk:checked ~ .page-talk > .talk-area,
+.tab--star:checked ~ .page-star > .star-area,
+.tab--setting:checked ~ .page-setting > .setting-area{
+  transform: translateY(0);
+  transition: all .3s;
+}
+
 .iphone--edge--left {
   position: absolute;
   width: 47px;
