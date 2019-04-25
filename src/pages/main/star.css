@@ -1,43 +1,42 @@
-.talk-area {
+.star-area {
   overflow: auto;
 }
 
-
-.talk--content {
+.star--content {
 }
 
-.talk--content + .talk--content {
+.star--content + .star--content {
   border-top: .6rem solid rgba(247, 247, 247, 1);
 }
 .star-top {
   width: 100%;
 }
 
-.talk-contents {
+.star-contents {
   height: 100%;
 }
 
-.talk--showall {
+.star--showall {
   float: right;
 }
 
-.talk--content--name {
+.star--content--name {
   font-size: 1rem;
   font-weight: 300;
   padding: .8rem;
 }
 
-.talk--showall {
+.star--showall {
   font-size: .7rem;
   font-weight: 300;
 }
-.talk--snacks {
+.star--snacks {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
 }
 
-.talk--snack {
+.star--snack {
   display: flex;
   flex-direction: column;
   width: 85%;
@@ -45,12 +44,12 @@
   transform: translateX(10%);
 }
 
-.talk--snack--image {
+.star--snack--image {
   width: inherit;
   border-radius: .8rem;
 }
 
-.talk--snack--name {
+.star--snack--name {
   width: 85%;
   font-size: .8rem;
   font-weight: 300;
@@ -59,34 +58,34 @@
   padding: .2rem 0;
 }
 
-.talk--pop {
+.star--recommend {
   padding: 0 .4rem;
 }
 
-.talk--pop + .talk--pop {
+.star--recommend + .star--recommend {
   padding-top: .2rem;
 }
 
-.talk--pop--image {
+.star--recommend--image {
   width: 100%;
 }
 
-.talk--stories {
+.star--stories {
   padding: 0 .4rem;
 }
 
-.talk--stories > .talk--story:first-child {
+.star--stories > .star--story:first-child {
   border-top: 1px solid rgba(240, 240, 240, 1);
 }
 
-.talk--story {
+.star--story {
   display: flex;
   align-items: center;
   padding: .4rem 0;
   border-bottom: 1px solid rgba(240, 240, 240, 1);
 }
 
-.talk--story--image {
+.star--story--image {
   width: 38%;
 }
 
@@ -103,14 +102,14 @@
   font-weight: 300;
 }
 
-.talk--more {
+.star--more {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
 }
 
-.talk--more--plus {
+.star--more--plus {
   width: 1rem;
   height: 1rem;
   font-size: 1rem;
@@ -121,8 +120,107 @@
   transform: translateY(-.1rem);
 }
 
-.talk--more--text {
+.star--more--text {
   font-size: 1rem;
   font-weight: 300;
   padding-left: .4rem;
+}
+
+.star--pops {
+  padding: 0 .4rem;
+  /* border-bottom: 1px solid rgba(240, 240, 240, 1); */
+}
+
+.star--pop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.star--pop + .star--pop {
+  padding-top: .8rem;
+}
+
+.star--pops > .star--pop:last-child {
+  padding-bottom: .3rem;
+  border-bottom: 1px solid rgba(220, 220, 220, 1);
+}
+
+.star--pop--image {
+  height: 4rem;
+}
+
+.story--pop--main {
+  flex: 1;
+  font-size: .8rem;
+  font-weight: 300;
+  line-height: 1.2;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-bottom: 1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.story--pop--sub {
+  font-size: .6rem;
+}
+
+.story--pop--start {
+  width: 5rem;
+  font-size: .8rem;
+  font-weight: 300;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-weight: 300;
+  padding: .5rem 0;
+  border: 1px solid rgba(247, 247, 247, 1);
+  border-radius: .3rem;
+}
+
+.pop--start--text::after {
+  content: "▷";
+}
+
+.star--kokoa-go {
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.star--kokoa-go--text {
+  position: relative;
+  margin-left: 1rem;
+}
+
+.star--kokoa-go--text::before {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(../../images/star/star_ufo.svg);
+  background-repeat: no-repeat;
+  transform: translateY(-25%);
+}
+
+.star--up {
+  display: block;
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+  background-color: rgba(247, 247, 247, 1);
+  padding-top: .5rem;
+  padding-bottom: 1rem;
+}
+
+.start--up--button {
+  display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    line-height: 1.6;
+    background-color: rgba(230, 230, 230, 1);
+    border-radius: 1.2rem;
 }
