@@ -1,3 +1,14 @@
+@keyframes fadein {
+  from { 
+    transform: translateY(3vh);
+    opacity: 0.5;
+  }
+  to { 
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 body {
   display: flex;
 }
@@ -136,16 +147,11 @@ content {
   visibility: visible;
 }
 
-.tab content {
-  transform: translateY(3vh);
-}
-
 .tab--friend:checked ~ .page-friend > .friend-area,
 .tab--talk:checked ~ .page-talk > .talk-area,
 .tab--star:checked ~ .page-star > .star-area,
 .tab--setting:checked ~ .page-setting > .setting-area{
-  transform: translateY(0);
-  transition: all .3s;
+  animation: .5s fadein;
 }
 
 .iphone--edge--left {

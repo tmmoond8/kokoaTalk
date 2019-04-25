@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="./common.css">
     <link rel="stylesheet" href="./src/pages/main/friend.css">
     <link rel="stylesheet" href="./src/pages/main/talk.css">
+    <link rel="stylesheet" href="./src/pages/main/star.css">
     <link rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
@@ -52,12 +53,12 @@
           <i class="far fa-user"></i>
           <i class="fas fa-user-alt selected"></i>
         </label>
-        <input type="radio" class="tab--talk" name="tab" id="talk" checked>
+        <input type="radio" class="tab--talk" name="tab" id="talk">
         <label for="talk">
           <i class="far fa-comment"></i>
           <i class="fas fa-comment selected"></i>
         </label>
-        <input type="radio" class="tab--star" name="tab" id="star">
+        <input type="radio" class="tab--star" name="tab" id="star" checked>
         <label for="star">
           <i class="far fa-star"></i>
           <i class="fas fa-star selected"></i>
@@ -480,8 +481,110 @@
             </ol>
           </content>
         </div>
+        <!-- 게임별-->
         <div class="page-star">
-          star
+          <header class="header" style="position: fixed;">
+            <h2 class="header--tabname">게임별</h2>
+            <nav class="header--menus">
+              <ol>
+                <li class="header--search">찾기
+                  <i class="fas fa-search"></i>
+                </li>
+                <li class="header--setting">셋팅
+                  <i class="fas fa-cog"></i>
+                </li>
+              </ol>
+            </nav>
+          </header>
+          <content class="talk-area">
+            <ol class="talk-contents">
+              <li class="talk--content">
+                <img class="star-top" src="src/images/star/star_top.png">
+              </li>
+              <li class="talk--content">
+                <h3 class="talk--content--name">게임별 스낵타임<span
+                    class="talk--showall">전체보기</span></h3>
+                <ol class="talk--snacks">
+                    <li class="talk--snack">
+                      <img class="talk--snack--image" src="src/images/star/star_snack1.png"></img>
+                      <p class="talk--snack--name">아재개그를 잘 하는 소녀</p>
+                    </li>
+                    <li class="talk--snack">
+                      <img class="talk--snack--image" src="src/images/star/star_snack2.png"></img>
+                      <p class="talk--snack--name">텐바이텐 클래식</p>
+                    </li>
+                    <li class="talk--snack">
+                      <img class="talk--snack--image" src="src/images/star/star_snack3.png"></img>
+                      <p class="talk--snack--name">벽돌깨기: 스매시킹</p>
+                    </li>
+                    <li class="talk--snack">
+                      <img class="talk--snack--image" src="src/images/star/star_snack4.png"></img>
+                      <p class="talk--snack--name">에이지 오브 2048</p>
+                    </li>
+                    <li class="talk--snack">
+                      <img class="talk--snack--image" src="src/images/star/star_snack5.png"></img>
+                      <p class="talk--snack--name">에이지 오브 솔리테어</p>
+                    </li>
+                    <li class="talk--snack">
+                      <img class="talk--snack--image" src="src/images/star/star_snack6.png"></img>
+                      <p class="talk--snack--name">빙글빙글 터치</p>
+                    </li>
+                    <li class="talk--snack">
+                      <img class="talk--snack--image" src="src/images/star/star_snack7.png"></img>
+                      <p class="talk--snack--name">클래시 로얄 프렌즈</p>
+                    </li>
+                    <li class="talk--snack">
+                      <img class="talk--snack--image" src="src/images/star/star_snack8.png"></img>
+                      <p class="talk--snack--name">프렌즈 뽑기</p>
+                    </li>
+                </ol>
+              </li>
+              <li class="talk--content" id="pop">
+                <h3 class="talk--content--name">게임별 추천놀이</h3>
+                <ol class="talk--pops">
+                    <li class="talk--pop">
+                      <img class="talk--pop--image" src="src/images/star/star_recommend1.png"></img>
+                    </li>
+                    <li class="talk--pop">
+                      <img class="talk--pop--image" src="src/images/star/star_recommend2.png"></img>
+                    </li>
+                    <li class="talk--pop">
+                      <img class="talk--pop--image" src="src/images/star/star_recommend3.png"></img>
+                    </li>
+                </ol>
+              </li>
+              <li class="talk--content" id="story">
+                  <h3 class="talk--content--name">게임별 스토리</h3>
+                  <ol class="talk--stories">
+                      <li class="talk--story">
+                        <img class="talk--story--image" src="src/images/star/star_story1.png"></img>
+                        <p class="story--contents--main">초특급 도움요청!
+                          <br>이모티콘을 주겠다고?
+                          <br><span class="story--contents--sub">어느 날, 프렌즈가 말을 걸었다</span>
+                        </p>
+                      </li>
+                      <li class="talk--story">
+                        <img class="talk--story--image" src="src/images/star/star_story2.png"></img>
+                        <p class="story--contents--main">아오 드디어 끝이다.
+                          <br>이상, 작가의 말이었습니다.
+                          <br><span class="story--contents--sub">나이를 잘 먹는 소녀</span>
+                        </p>
+                      </li>
+                      <li class="talk--story">
+                        <img class="talk--story--image" src="src/images/star/star_story3.png"></img>
+                        <p class="story--contents--main">다양한 게임으로 즐기는
+                          <br>무한 점수 경쟁!
+                          <br><span class="story--contents--sub">모두의 게임</span>
+                        </p>
+                      </li>
+                  </ol>
+                  <div class="talk--more">
+                    <span class="talk--more--plus">+</span>
+                    <span class="talk--more--text">더보기</span>
+                  </div>
+                </li>
+            </ol>
+          </content>
         </div>
         <div class="page-setting">
           setting
