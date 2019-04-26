@@ -1,3 +1,7 @@
+.talk-area {
+  -webkit-overflow-scrolling: touch;
+}
+
 .talk--list {
   height: 100%;
   overflow: scroll;

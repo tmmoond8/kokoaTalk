@@ -1,3 +1,7 @@
+.friend-area {
+  -webkit-overflow-scrolling: touch;
+}
+
 .me {
   display: flex;
   text-decoration: none;

@@ -1,5 +1,6 @@
 .star-area {
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .star--content {
@@ -128,7 +129,6 @@
 
 .star--pops {
   padding: 0 .4rem;
-  /* border-bottom: 1px solid rgba(240, 240, 240, 1); */
 }
 
 .star--pop {
