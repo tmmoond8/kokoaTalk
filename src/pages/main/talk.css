@@ -12,6 +12,7 @@
   display: flex;
   padding: 1rem 0;
   text-decoration: none;
+  cursor: pointer;
 }
 
 
@@ -58,6 +59,7 @@
   display: flex;
   padding: 1rem 0;
   text-decoration: none;
+  cursor: pointer;
 }
 
 
