@@ -36,7 +36,7 @@
   height: 2.4rem;
   right: 1rem;
   top: 1.2rem;
-  background-image: url(../../images/logos/my-profile.jpg);
+  background-image: url(../../images/my-profile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 1rem;
@@ -86,7 +86,7 @@
   bottom: -1rem;
   left: 50%;
   transform: translateX(-50%);
-  background-image: url(../../images/logos/my-profile.jpg);
+  background-image: url(../../images/my-profile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 2.56rem;

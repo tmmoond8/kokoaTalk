@@ -1,3 +1,19 @@
+@keyframes slidein{
+  from { 
+    transform: translateX(20rem);
+    opacity: 0.5;
+  }
+  to { 
+    transform: translateX(0);
+    opacity: 1;
+    visibility: hidden;
+  }
+}
+
+.setting--area{
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
 
 .setting--profile {
   display: flex;
@@ -102,7 +118,7 @@
 }
 
 .setting--feature {
-  height: 18vw;
+  height: 4.4rem;
   font-size: 1rem;
   text-align: center;
   color: rgba(100, 100, 100, 1);
@@ -123,7 +139,7 @@
 }
 
 .setting--feature--text {
-  font-size: .6rem;
+  font-size: .55rem;
   padding: .7rem 0;
   color: black;
 }
@@ -141,9 +157,94 @@
 }
 
 .setting--icon--friendshop {
-  height: 85%;
+  height: 1.5rem;
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.setting--ad {
+  padding: 1.5rem 1rem;
+}
+
+.setting--ad--image {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: .7rem;
+}
+
+.setting--kokoa-now {
+  padding: 0 1rem;
+}
+
+.setting--kokoa-now--label {
+  font-size: 1rem;
+  padding-bottom: .7rem;  
+}
+
+.setting--kokoa-now--slider {
+  position: relative;
+  height: 13.5rem;
+  padding-bottom: 1rem;
+  user-select: none;
+  overflow: hidden;
+}
+
+.slider--label1,
+.slider--label2,
+.slider--label3 {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 12rem;
+  visibility: hidden;
+}
+
+#slider--radio1:checked ~ .slider--label2,
+#slider--radio2:checked ~ .slider--label3,
+#slider--radio3:checked ~ .slider--label1 {
+  visibility: visible;
+  animation: slidein .5s;
+}
+
+#slider--radio1:checked ~   .slider--nav2,
+#slider--radio2:checked ~   .slider--nav3,
+#slider--radio3:checked ~   .slider--nav1 {
+  background-color: black;
+}
+
+.slider--image1,
+.slider--image2,
+.slider--image3 {
+  height: -webkit-fill-available;
+  width: 100%;
+  border-radius: .5rem;
+  object-fit: scale-down;
+}
+
+
+.slider--nav1,
+.slider--nav2,
+.slider--nav3 {
+  position: absolute;
+  width: .4rem;
+  height: .4rem;
+  bottom: .4rem;
+  left: 50%;
+  border-radius: .4rem;
+  background: rgba(220, 220, 220, 1);
+}
+
+.slider--nav1 {
+  transform: translateX(-250%);
+}
+
+.slider--nav2 {
+  transform: translateX(-50%);
+}
+
+.slider--nav3 {
+  transform: translateX(150%);
 }

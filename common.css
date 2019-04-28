@@ -96,11 +96,11 @@ header > * {
   display: none;
 }
 
-input[type="radio"]:checked  + label > i {
+.tab input[type="radio"]:checked  + .tab label > i {
   display: none;
 }
 
-input[type="radio"]:checked  + label > .selected {
+.tab input[type="radio"]:checked  + .tab label > .selected {
   display: inline;
 }
 
