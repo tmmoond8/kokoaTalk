@@ -154,6 +154,10 @@ content {
   animation: .5s fadein;
 }
 
+.tab--setting ~ .page-setting > .setting-area {
+  color: red;
+}
+
 .iphone--edge--left {
   position: absolute;
   width: 47px;

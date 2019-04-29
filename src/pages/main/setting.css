@@ -6,11 +6,21 @@
   to { 
     transform: translateX(0);
     opacity: 1;
-    visibility: hidden;
   }
 }
 
-.setting--area{
+@keyframes slideout{
+  from { 
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to { 
+    transform: translateX(-20rem);
+    opacity: 0.5rem;
+  }
+}
+
+.setting-area{
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
@@ -213,6 +223,15 @@
 #slider--radio2:checked ~   .slider--nav3,
 #slider--radio3:checked ~   .slider--nav1 {
   background-color: black;
+}
+
+
+#slider--radio1:checked ~ .slider--label1,
+#slider--radio2:checked ~ .slider--label2,
+#slider--radio3:checked ~ .slider--label3 {
+  transform: translateX(-20rem);
+  animation: slideout .5s;
+  visibility: visible;
 }
 
 .slider--image1,

@@ -28,6 +28,7 @@
   font-size: 2.4rem;
   padding: .5rem 1rem;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .top--image-history {
