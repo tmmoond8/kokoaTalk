@@ -41,7 +41,7 @@ header > * {
 .header--search,
 .header--friend--plus,
 .header--talk-plus,
-.header--setting,
+.header--more,
 .header--menu {
   display: inline-block;
   width: 2.2rem;
@@ -104,11 +104,11 @@ header > * {
   display: inline;
 }
 
-.setting + label > i {
+.more + label > i {
   color: gray;
 }
 
-.setting + label > .selected {
+.more + label > .selected {
   color: black;
 }
 
@@ -131,7 +131,7 @@ content {
 .page-friend,
 .page-talk,
 .page-star,
-.page-setting {
+.page-more {
   position: absolute;
   width: 100%;
   visibility: hidden;
@@ -142,7 +142,7 @@ content {
 .tab--friend:checked ~ .page-friend,
 .tab--talk:checked ~ .page-talk,
 .tab--star:checked ~ .page-star,
-.tab--setting:checked ~ .page-setting {
+.tab--more:checked ~ .page-more {
   transform : translateY(-100vh);
   visibility: visible;
 }
@@ -150,13 +150,10 @@ content {
 .tab--friend:checked ~ .page-friend > .friend-area,
 .tab--talk:checked ~ .page-talk > .talk-area,
 .tab--star:checked ~ .page-star > .star-area,
-.tab--setting:checked ~ .page-setting > .setting-area{
+.tab--more:checked ~ .page-more > .more-area{
   animation: .5s fadein;
 }
 
-.tab--setting ~ .page-setting > .setting-area {
-  color: red;
-}
 
 .iphone--edge--left {
   position: absolute;
@@ -224,7 +221,7 @@ content {
   .tab--friend:checked ~ .page-friend,
   .tab--talk:checked ~ .page-talk,
   .tab--star:checked ~ .page-star,
-  .tab--setting:checked ~ .page-setting {
+  .tab--more:checked ~ .page-more {
     transform : translateY(-626px);
   }
 
